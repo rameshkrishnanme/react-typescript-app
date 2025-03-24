@@ -6,9 +6,9 @@ import './App.css';
 function App() {
 
   const todos = [
-    new Todo('Learn React'), 
-    new Todo('Learn TypeScript'),
-    new Todo('Learn Next.js')
+    new Todo('Teaching React'), 
+    new Todo('Teaching TypeScript'),
+    new Todo('Teaching Next.js')
   ];
 
   return (
