@@ -1,9 +1,6 @@
-import React from "react";
 import Todos from "./components/Todos";
-import Todo from "./models/todo";
 import "./App.css";
 import NewTodo from "./components/NewTodo";
-import { useState } from "react";
 import TodosContextProvider from "./store/todos.context";
 
 function App() {
@@ -26,12 +23,10 @@ function App() {
   // }
 
   return (
-    
-      <TodosContextProvider>
-        <NewTodo />
-        <Todos />
-      </TodosContextProvider>
-   
+    <TodosContextProvider>
+      <NewTodo />
+      <Todos />
+    </TodosContextProvider>
   );
 }
 
