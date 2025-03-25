@@ -18,10 +18,17 @@ function App() {
     setTodos([...todos, new Todo(text)]);
   }
 
+  function onRemoveToDo(todoId: string) : void {
+    console.log("Remove todo");
+    setTodos((prevTodos) => {
+      return prevTodos.filter(todo => todo.id !== todoId);
+    });
+  }
+
   return (
     <div>
       <NewTodo onAddTodo={onAddTodo}/>
-      <Todos items={todos} />
+      <Todos items={todos} onRemoveToDo={onRemoveToDo} />
     </div>
   );
 }
